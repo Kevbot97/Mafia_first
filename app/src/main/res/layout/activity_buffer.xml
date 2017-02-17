@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="kevin.mafia.BufferActivity">
+
+    <include layout="@layout/content_main" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewBuffer"
+            android:layout_weight="1"
+            android:layout_row="0"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/text_size_regular" />
+
+        <Button
+            android:text="Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bufferBtn"
+            android:layout_weight="5"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+    </GridLayout>
+
+</android.support.design.widget.CoordinatorLayout>
